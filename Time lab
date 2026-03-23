@@ -1,0 +1,53 @@
+/Ayaan Patel, 3/22/26, Time lab -> All three excerises in one program
+
+#include <iostream>
+#include <ctime> //for time functions, calls the library that allow us to use time fucntions
+using namespace std;
+
+
+int main(){
+
+//part 1
+
+
+time_t n=time(0);
+char* d=ctime(&n);
+
+cout<<"curent date and time"<<d<<endl;
+
+
+//part 2
+
+int off;
+cout<<"enter utc offset";
+cin>>off;
+
+
+time_t now=time(0);
+now=now+off*3600;
+
+
+char* t=ctime(&now);
+
+cout<<"time in that zone"<<t<<endl;
+
+
+//part 3
+
+time_t s,e;
+string a;
+
+
+cout<<"what is 6 + Nathan Abraham if nathan = 7 ??"; //Happy Birthday Nathan Abraham, hope you have a great day and a great year ahead, you deserve it :)
+
+s=time(0);
+cin>>a;
+e=time(0);
+
+
+double tt=difftime(e,s);
+
+cout<<"you took "<<tt<<" seconds"<<endl;
+
+return 0;
+}
