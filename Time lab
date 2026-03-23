@@ -1,7 +1,7 @@
-/Ayaan Patel, 3/22/26, Time lab -> All three excerises in one program
+//Ayaan Patel, 3/22/26, Time lab -> All three excerises in one program
 
 #include <iostream>
-#include <ctime> //for time functions, calls the library that allow us to use time fucntions
+#include <ctime> //for time functions, calls the library that allows us to use time functions
 using namespace std;
 
 
